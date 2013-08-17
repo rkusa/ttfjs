@@ -1,0 +1,18 @@
+{
+  "name": "ttfjs",
+  "author": {
+    "name": "Markus Ast",
+    "email": "npm.m@rkusa.st"
+  },
+  "version": "0.0.0",
+  "main": "./lib/ttf",
+  "homepage": "https://github.com/rkusa/ttfjs",
+  "dependencies": {
+    "structjs": "git://github.com/rkusa/structjs.git"
+  },
+  "bugs": "https://github.com/rkusa/ttfjs/issues",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/rkusa/ttfjs.git"
+  }
+}
