@@ -1,10 +1,8 @@
 # ttfjs
 
 ```json
-{
-  "name": "ttfjs",
-  "version": "0.0.0"
-}
+{ "name": "ttfjs",
+  "version": "0.0.0" }
 ```
 
 ## MIT License

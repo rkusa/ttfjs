@@ -8,7 +8,7 @@
   "main": "./lib/ttf",
   "homepage": "https://github.com/rkusa/ttfjs",
   "dependencies": {
-    "structjs": "git://github.com/rkusa/structjs.git"
+    "structjs": "0.1.x"
   },
   "bugs": "https://github.com/rkusa/ttfjs/issues",
   "repository" : {
