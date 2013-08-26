@@ -5,6 +5,9 @@
   "version": "0.0.0" }
 ```
 
+**Specification:**
+* [Apple](https://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html)
+
 ## MIT License
 Copyright (c) 2013 Markus Ast
 
