@@ -1,12 +1,21 @@
 # ttfjs
 
+TTFjs is a TrueType font parser entirely written in JavaScript and compatible to both Node.js and the Browser.
+
 ```json
 { "name": "ttfjs",
-  "version": "0.0.0" }
+  "version": "0.1.0" }
 ```
 
-**Specification:**
-* [Apple](https://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html)
+### Specification Coverage
+
+The following tables are implemented: **cmap** (currently only format 4), **glyf** (glyphs are not actually decompose, only rewritten), **head**, **hhea**, **hmtx**, **loca**, **maxp**, **name**, **os2**, **post** (currently only format 3).  
+
+**TrueType Font Specification:** [Apple](https://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html), [Microsoft](http://www.microsoft.com/typography/specs/default.htm)
+
+## Usage
+
+Coming soon ...
 
 ## MIT License
 Copyright (c) 2013 Markus Ast
