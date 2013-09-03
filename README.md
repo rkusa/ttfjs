@@ -9,7 +9,7 @@ TTFjs is a TrueType font parser entirely written in JavaScript and compatible to
 
 ### Specification Coverage
 
-The following tables are implemented: **cmap** (currently only format 4), **glyf** (glyphs are not actually decompose, only rewritten), **head**, **hhea**, **hmtx**, **loca**, **maxp**, **name**, **os2**, **post** (currently only format 3).  
+The following tables are implemented: **cmap** (currently only format 4), **glyf** (glyphs are not actually decomposed, only rewritten), **head**, **hhea**, **hmtx**, **loca**, **maxp**, **name**, **os2**, **post** (currently only format 3).  
 
 **TrueType Font Specification:** [Apple](https://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html), [Microsoft](http://www.microsoft.com/typography/specs/default.htm)
 
