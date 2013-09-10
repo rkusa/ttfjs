@@ -4,13 +4,13 @@
     "name": "Markus Ast",
     "email": "npm.m@rkusa.st"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/ttf",
   "homepage": "https://github.com/rkusa/ttfjs",
   "keywords": ["ttf", "parse", "font", "subset"],
   "license": "MIT",
   "dependencies": {
-    "structjs": "0.1.x"
+    "structjs": "0.2.x"
   },
   "bugs": "https://github.com/rkusa/ttfjs/issues",
   "repository" : {

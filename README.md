@@ -4,7 +4,7 @@ TTFjs is a TrueType font parser entirely written in JavaScript and compatible to
 
 ```json
 { "name": "ttfjs",
-  "version": "0.1.0" }
+  "version": "0.1.1" }
 ```
 
 ### Specification Coverage
