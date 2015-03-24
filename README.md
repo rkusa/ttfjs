@@ -13,7 +13,89 @@ The following tables are implemented: **cmap** (currently only format 4), **glyf
 
 ## Usage
 
-Coming soon ...
+```js
+var TTFFont = require('ttfjs')
+```
+
+### new TTFFont(buffer)
+
+Create a new font instance from the provided buffer (can be a Node `Buffer` or an `ArrayBuffer`).
+
+#### .stringWidth(str, size)
+
+Returns the width for the given string in the given font size.
+
+#### .lineHeight(size, [includeGap])
+
+Returns the line height for the given font size with line gap or without.
+
+#### .lineDescent(size)
+
+Return the line descent for the given font size.
+
+#### .clone()
+
+Returns a clone of the font object.
+
+#### .save()
+
+Encodes the font into an `ArrayBuffer`.
+
+#### .subset([opts])
+
+Creates a `Subset` for the current font.
+
+### .subset([opts]) | new TTFFont.Subset(font, [opts])
+
+Creates a `Subset` for the current font.
+
+**Options:**
+
+- **remap** - (default: true) whether to remap char codes
+- **trimNames** - (default: false) whether trim localized names (reduces file size)
+
+#### .use(chars)
+
+Add the given characters to the subset.
+
+#### .encode(str)
+
+Encode the given string using the current remapping.
+
+#### .embed()
+
+Embed the current used characters.
+
+#### .save()
+
+Encodes the subset into an `ArrayBuffer`.
+
+## Example
+
+```js
+var fs = require('fs')
+var TTFFont = require('ttfjs')
+
+var font = new TTFFont(fs.readFileSync(__dirname + '/Corbel.ttf'))
+var subset = font.subset()
+
+subset.use('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890')
+console.log(subset.encode('abcdefghijklmnopqrstuvwxyz'))
+
+subset.embed()
+
+fs.writeFileSync('./test.ttf', toBuffer(subset.save()), { encoding: 'binary' })
+
+function toBuffer(ab) {
+  var buffer = new Buffer(ab.byteLength)
+  var view = new Uint8Array(ab)
+  for (var i = 0; i < buffer.length; ++i) {
+    buffer[i] = view[i]
+  }
+  return buffer
+}
+```
+
 
 ## MIT License
 Copyright (c) 2013-2015 Markus Ast
